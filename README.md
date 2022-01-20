@@ -17,6 +17,7 @@
         TRAINERTYPE (eg FIREBREATHER, HIKER, etc)
         trainername,teamnumber (if the trainer has more than 1 team)
         partycount
+- for things in all caps you need to enter the internal name, which is usually just the normal name but in all caps an no spaces or dashes
 - afterwards, list each pokemon in the party
 
         SPECIES,level,ITEM,MOVE,MOVE,MOVE,MOVE,abilityslot (0-2 or blank for random),gender (0 or 1 or blank for random),formnumber,shininess (true or false),NATURE,ivs (a single number 0-31),happiness,nickname,mutant (true or false),ev,ev,ev,ev,ev,ev,prestatus (if any)
