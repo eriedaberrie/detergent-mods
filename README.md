@@ -14,7 +14,7 @@
 - triples the EVs of AI pokemon that have defined EVs and also makes them really really stupid
 ### custom trainers.rb
 - define custom trainer fights
-- define trainers in here like you would in the PBS
+- create a file `customtrainers.txt` in the game directory and add trainers in there like you would in the PBS
 
         TRAINERTYPE (eg FIREBREATHER, HIKER, etc)
         trainername,teamnumber (if the trainer has more than 1 team)
