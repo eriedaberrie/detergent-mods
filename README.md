@@ -7,6 +7,8 @@
  
  You're probably looking for QOL/, where you can find the quality-of-life mods and their descriptions.
 ## individual mod descriptions
+### fix mutant switching.rb
+- quick patch for a weird ingame glitch of mutant Pokemon being able to switch into themselves as well as fainted Pokemon, will be officially fixed and unnecessary by v1.4
 ### classic mode.rb
 - for insane people/people that genuinely want to have a bad time
 - triples the EVs of AI pokemon that have defined EVs and also makes them really really stupid
