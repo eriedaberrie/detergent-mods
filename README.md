@@ -14,7 +14,7 @@
 - triples the EVs of AI pokemon that have defined EVs and also makes them really really stupid
 ### custom trainers.rb
 - define custom trainer fights
-- define trainers in here like you would in the PBS
+- create a file `customtrainers.txt` in the game directory and add trainers in there like you would in the PBS
 
         TRAINERTYPE (eg FIREBREATHER, HIKER, etc)
         trainername,teamnumber (if the trainer has more than 1 team)
@@ -25,6 +25,6 @@
 - for things in all caps you need to enter the internal name, which is usually just the normal name but in all caps an no spaces or dashes
 - you can access these trainers from "Test Trainer Battle" in the debug menu, or you can match the trainer type, trainer, and team number of an existing trainer to replace their fight.
 ### mutant sprites.rb
-- ok this one was really lazy, but basically its lets you add custom sprites for mutant Pokemon by putting `_SHADOW` at the end of the name of the sprite
+- ok this one was really lazy, but basically its lets you add custom sprites for mutant Pokemon by putting `_shadow` at the end of the name of the sprite
 - it might break some things (definitely the party screen) if the player obtains any mutant Pokemon but thankfully those aren't legally available for now
  
