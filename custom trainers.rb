@@ -119,7 +119,7 @@ end
 
 
 if File.exist?(CUSTOMTRAINERSFILENAME) && !$newtrainersdat
-  $newtrainersdat = (pbCompileTrainersCustom + load_data("Data/trainers_hard.dat")).uniq { |trainer| [trainer[0], trainers[1], trainer[4]] }
+  $newtrainersdat = (pbCompileTrainersCustom + load_data("Data/trainers_hard.dat")) # .uniq { |trainer| [trainer[0], trainer[1], trainer[4]] }
   # Kernel.pbMessage($newtrainersdat[0].join(","))
 end
 
