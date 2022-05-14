@@ -15,3 +15,5 @@
 - you can't encounter wild Pokemon unless you're holding the spacebar
 ### relearn hidden egg moves.rb
 - fully evolved delta Pokemon holding their corresponding type plate will be able to learn their hidden egg move via the move relearner menu instead of needing to breed
+### skipintro.rb
+- skips the startup scene and brings you straight to the save select screen
