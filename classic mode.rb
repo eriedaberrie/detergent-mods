@@ -42,27 +42,3 @@ def changeForPurism(pokemon)
   end
   pokemon
 end
-
-
-=begin
-["pbLoadTrainer", "pbLoadMiror", "pbLoadClone", "pbLoadGymBattle", "pbLoadTrainerScaled",
-"pbLoadTrainerRandom", "pbLoadTrainerRandomized", "pbLoadPokegearTrainer"].each do |meth|
-  code = <<-CODE
-  alias _#{meth} #{meth}
-  def #{meth}(*args)
-    Kernel.pbMessage("aaaa")
-    ret = _#{meth}(*args)
-    if ret
-      Kernel.pbMessage(ret)
-      ret[2].each do |mon|
-        Kernel.pbMessage(mon)
-        mon.ev.each do |ev|
-          ev *= 100
-        end
-      end
-    end
-  end
-  CODE
-  eval(code)
-end
-=end

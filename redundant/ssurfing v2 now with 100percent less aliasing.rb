@@ -177,27 +177,6 @@ def pbStartSurfing()
   $PokemonTemp.dependentEvents.refresh_sprite
 end
 
-=begin
-def pbEndSurf(xOffset,yOffset)
-  return false if !$PokemonGlobal.surfing
-  x=$game_player.x
-  y=$game_player.y
-  currentTag=$game_map.terrain_tag(x,y)
-  facingTag=Kernel.pbFacingTerrainTag
-  if pbIsSurfableTag?(currentTag) && !pbIsSurfableTag?(facingTag)
-    if Kernel.pbJumpToward
-      Kernel.pbCancelVehicles(nil,false)
-      $game_map.autoplayAsCue
-      $game_player.increase_steps
-      result=$game_player.check_event_trigger_here([1,2])
-      Kernel.pbOnStepTaken(result)
-    end
-    return true
-  end
-  return false
-end
-=end
-
 def pbEndSurf(xOffset,yOffset)
   return false if !$PokemonGlobal.surfing || $PokemonGlobal.diving
   x=$game_player.x

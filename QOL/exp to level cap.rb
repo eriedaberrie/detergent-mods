@@ -55,19 +55,3 @@ def pbEvolutionCheck(currentlevels)
     _pbEvolutionCheck(currentlevels)
   end
 end
-
-
-# class PokeBattle_Battle; def pbLearnMove(*args); end; end
-
-=begin
-class << Input
-  alias_method :_trigger?, :trigger?
-
-  def trigger?(a)
-    _trigger?(a) || (Keys.press?(Keys::X) && (a == Input::C))
-  end
-end
-=end
-
-# Kernel.pbMessage(LEVELCAPS.to_s)
-# Kernel.pbMessage(LEVELCAPS.map{|cap| "[#{cap[0].to_s}: #{cap[1].to_s}]"}.join(", "))
