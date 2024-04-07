@@ -5,9 +5,7 @@ def PBExperience.pbAddExperience(currexp, expgain, growth)
   return 0 if expgain == 0
   for cap in LEVELCAPS
     if !$game_switches[cap[0]]
-      # Kernel.pbMessage(cap[1].to_s)
       return pbGetExpInternal(cap[1], growth)
-      # return pbGetExpInternal(40, growth)
     end
   end
   pbGetExpInternal(MAXIMUMLEVEL, growth)
@@ -15,13 +13,8 @@ end
 
 # hold X to skip inbattle levelup messages
 class PokeBattle_Scene
-  # alias_method :_pbEXPBar, :pbEXPBar
   alias_method :_pbLevelUp, :pbLevelUp
   alias_method :_pbDisplayPausedMessage, :pbDisplayPausedMessage
-  
-  # def pbEXPBar(pokemon, battler, startExp, endExp, tempExp1, tempExp2)
-  #   _pbEXPBar(pokemon, battler, startExp, endExp, tempExp1, tempExp2)
-  # end
   
   def pbLevelUp(*args)
     _pbLevelUp(*args) if !Keys.press?(Keys::X)

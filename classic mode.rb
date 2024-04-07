@@ -19,7 +19,6 @@ class PokeBattle_Battle
     else
       100
     end
-    # pbAIRandom(3) == 0 ? _pbGetMoveScore(*args) : 1000
   end
   
   
@@ -36,7 +35,6 @@ end
 # multiplies the evs of every trainer mon with non-default evs with number
 # i couldve done an alias here to preserve the initial functionality but nahhh useless method
 def changeForPurism(pokemon)
-  # Kernel.pbMessage(pokemon.ev.join(", "))
   if pokemon.ev.uniq != [pokemon.level * 2 + 85]
     pokemon.ev.map!{|i| i * EVMULT}
   end
